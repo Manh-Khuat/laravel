@@ -12,7 +12,7 @@
   <body>
     <ul class="list-group">
         @foreach ($data as $key)
-        <li class="list-group-item">{{ $blog }}</li>
+        <li class="list-group-item">{{ $key }}</li>
         @endforeach
     </ul>
     <!-- Optional JavaScript -->

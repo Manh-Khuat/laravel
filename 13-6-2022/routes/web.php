@@ -24,3 +24,7 @@ Route::get('/gioi-thieu', function () {
     $name = 'About page';
     return view('about', compact('name'));
 });
+
+// Category
+Route::get('/category', 'App\Http\Controllers\CategoryController@index');
+Route::get('/category/{id}', 'App\Http\Controllers\CategoryController@view');
