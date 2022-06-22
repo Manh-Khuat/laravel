@@ -1,6 +1,6 @@
 const Home = () => import('./components/Home.vue')
-const Contact = () => import('./components/Contact.vue')
-const Show = () => import('./components/products/Show.vue')
+const Contact = () => import('./components/Contacto.vue')
+const Show = () => import('./components/products/show.vue')
 const Create = () => import('./components/products/Create.vue')
 const Editor = () => import('./components/products/Editor.vue')
 export const routes = [
@@ -10,17 +10,17 @@ export const routes = [
         component: Home
     },
     {
-        name: 'ShowBlogs',
+        name: 'Show',
         path: '/products',
         component: Show
     },
     {
-        name: 'CreateBlog',
+        name: 'Create',
         path: '/create',
         component: Create
     },
     {
-        name: 'EditorBlog',
+        name: 'Editor',
         path: '/editor/:id',
         component: Editor
     },
